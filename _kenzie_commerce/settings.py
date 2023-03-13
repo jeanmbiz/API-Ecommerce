@@ -45,9 +45,7 @@ DATABASES = {
 DATABASE_URL = os.getenv("DATABASE_URL")
 
 if DATABASE_URL:
-    production_db = dj_database_url.config(
-        default=DATABASE_URL, conn_max_age=500, ssl_require=True
-    )
+    production_db = dj_database_url.config(default=DATABASE_URL)
     DATABASES["default"].update(production_db)
     DEBUG = False
 
@@ -63,7 +61,6 @@ if not DEBUG:
 
 
 ALLOWED_HOSTS = []
-
 
 RAILWAY_STATIC_URL = os.getenv("RAILWAY_STATIC_URL")
 
