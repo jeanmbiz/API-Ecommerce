@@ -34,12 +34,12 @@ class CartSerializer(serializers.Serializer):
 
             try:
                 cart = Cart.objects.get(user_id=validated_data["user"].id)
-                cart_id.append(cart.id)
             except Cart.DoesNotExist:
                 cart = Cart.objects.create(
                     value=product_price, user_id=validated_data["user"].id
                 )
-                cart_id.append(cart.id)
+
+            cart_id.append(cart.id)
 
             ProductsInCart.objects.create(
                 quantity=item["quantity"], product=product, cart=cart

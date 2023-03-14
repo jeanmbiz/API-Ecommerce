@@ -52,10 +52,10 @@ class ProductsDetailView(RetrieveUpdateDestroyAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
 
-    lookup_url_kwarg = "product_id"
+    lookup_url_kwarg = "pk"
 
     def get_object(self) -> Product:
-        product_reference = self.kwargs["product_id"]
+        product_reference = self.kwargs["pk"]
         product = get_object_or_404(Product, pk=product_reference)
 
         return product

@@ -9,6 +9,7 @@ class Product(models.Model):
     price = models.IntegerField()
     stock = models.IntegerField()
     description = models.TextField()
+    product_image = models.ImageField(null=True)
 
     user = models.ForeignKey(
         "user.User", on_delete=models.CASCADE, related_name="products"
