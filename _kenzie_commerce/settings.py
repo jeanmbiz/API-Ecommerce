@@ -62,11 +62,11 @@ if not DEBUG:
 
 ALLOWED_HOSTS = []
 
-RAILWAY_STATIC_URL = os.getenv("RAILWAY_STATIC_URL")
+RAILWAY_STATIC_URL = "api-django-production.up.railway.app"
 
 if RAILWAY_STATIC_URL:
     # Configuramos o host permitindo que o nosso app Railway se conecte ao server do Django
-    ALLOWED_HOSTS += [RAILWAY_STATIC_URL, "127.0.0.1"]
+    ALLOWED_HOSTS += [RAILWAY_STATIC_URL, "0.0.0.0"]
 
 
 AUTH_USER_MODEL = "user.User"
