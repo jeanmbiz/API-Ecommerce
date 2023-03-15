@@ -170,13 +170,14 @@ SIMPLE_JWT = {
 REST_FRAMEWORK = {
     "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
     "PAGE_SIZE": 2,
-    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
 }
 
 SPECTACULAR_SETTINGS = {
-    "TITLE": "Kenzie Commerce",
+    "TITLE": "Ecommerce",
     "DESCRIPTION": "Projeto final M5 grupo 32",
-    "VERSION": "0.0.1",
+    "VERSION": "1.0.0",
+    'SERVE_INCLUDE_SCHEMA': False,
 }
 
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"

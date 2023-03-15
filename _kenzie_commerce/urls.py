@@ -3,7 +3,6 @@ from django.contrib import admin
 from drf_spectacular.views import (
     SpectacularAPIView,
     SpectacularSwaggerView,
-    # SpectacularRedocView,
 )
 from django.conf import settings
 from django.conf.urls.static import static
@@ -15,9 +14,9 @@ urlpatterns = [
     path("api/", include("address.urls")),
     path("api/", include("orders.urls")),
     path("api/", include("cart.urls")),
-    path("api/schema/", SpectacularAPIView.as_view(), name="schema"),
+    path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
     path("api/docs/swagger/", SpectacularSwaggerView.as_view(url_name="schema")),
-    # path("api/docs/swagger/", SpectacularRedocView.as_view(url_name="schema")),
+    path('api/schema/swagger-ui/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
 ]
 
 if settings.DEBUG:
