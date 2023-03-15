@@ -5,7 +5,7 @@
 <h4>O prjeto final é desenvolvido ao final de cada módulo com intuito de aplicar o conhecimento adquirido durante o mesmo. Neste módulo tivemos nosso primeiro contato com python, juntamente com django e djando REST framework, utilizando banco de dados relacional para criação de APIs.</h4>
 
 
-<h2 align="center"><a target=blank href="http://127.0.0.1:8000/api/docs/swagger/">Siga as instruções e clique aqui para ver a documentação do projeto!</a></h2>
+<h2 align="center"><a target=blank href="https://api-django-production.up.railway.app/api/schema/swagger-ui/">Siga as instruções e clique aqui para ver a documentação do projeto!</a></h2>
 
 
 ## 📺 Imagem
