@@ -1,4 +1,4 @@
-<h1 align="center">Projeto final M5 grupo 32 - Kenzie ecommerce 🛍</h1>
+<h1 align="center">Projeto final M5 grupo 32 - Ecommerce 🛍</h1>
 <p align="center">
   <img alt="Imagem ilustrativa e-commerce" src="https://cdn2.increase.com.br/increasecombr/2018/01/22135702/ecommerce.jpg" width="1200" height="450"/>
 </p>
