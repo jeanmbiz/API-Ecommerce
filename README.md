@@ -8,14 +8,11 @@
 <h2 align="center"><a target=blank href="https://api-django-production.up.railway.app/api/schema/swagger-ui/">Siga as instruções e clique aqui para ver a documentação do projeto!</a></h2>
 
 
-## 📺 Imagem
+## Diagrama do Projeto
 
 <details>
-  
-<summary>Clique para ver o diagrama do projeto</summary>
-  
-![preview](https://user-images.githubusercontent.com/57195630/224507354-9f46ae77-fa33-4800-89e3-3794afb49069.png)
 
+![diagrama](https://user-images.githubusercontent.com/57195630/224507354-9f46ae77-fa33-4800-89e3-3794afb49069.png)
 
 </details> 
 
@@ -41,16 +38,18 @@
 ## Instalação
 
     - Clonar repositorio
-    $ git clone git@github.com:Kenzie-Academy-Brasil-Developers/projeto-final-m5-grupo-32.git
+    $ git clone git@github.com:jeanmbiz/API-Ecommerce.git
 
     - Instalar dependencias
     $ python -m venv venv --upgrade-deps 
-    $ source venv/bin our script/activate   
+    $ source venv/bin ou source venv/Scripts/activate  
     $ pip install -r requirements.txt
+
+    - Configurar .env com base no .env.example ou utilizar o db.sqlite3
+
+    - Fazer migrations
     $ python manage.py makemigrations 
     $ python manage.py migrate
-    
-    - Configurar .env com base no .env.example ou utilizar o db.sqlite3
     
     - Rodar servidor
     $ python manage.py runserver
