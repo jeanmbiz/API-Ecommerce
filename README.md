@@ -10,11 +10,7 @@
 
 ## Diagrama do Projeto
 
-<details>
-
 ![diagrama](https://user-images.githubusercontent.com/57195630/224507354-9f46ae77-fa33-4800-89e3-3794afb49069.png)
-
-</details> 
 
 ## 💻 Linguagens e tecnologias utilizadas
 <p align="left"> 
